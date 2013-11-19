@@ -15,6 +15,27 @@
   },
   {
     "remote":       "github",
+    "account":      "quincy-ubuntu",
+    "repository":   "android_device_samsung_quincy-common",
+    "target_path":  "device/samsung/quincy-common",
+    "revision":     "kitkat"
+  },
+  {
+    "remote":       "github",
+    "account":      "quincy-ubuntu",
+    "repository":   "android_device_samsung_quincyatt",
+    "target_path":  "device/samsung/quincyatt",
+    "revision":     "kitkat"
+  },
+  {
+    "remote":       "github",
+    "account":      "bryan2894",
+    "repository":   "android_device_samsung_msm8660-common",
+    "target_path":  "device/samsung/msm8660-common",
+    "revision":     "kitkat"
+  },
+  {
+    "remote":       "github",
     "account":      "Cl3Kener",
     "repository":   "HERC-KERNELS",
     "target_path":  "kernel/samsung/msm8660-common",
