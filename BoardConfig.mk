@@ -32,8 +32,8 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 TARGET_OTA_ASSERT_DEVICE := SGH-I717,quincyatt
 
 # Kernel
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
-TARGET_KERNEL_CONFIG        := cyanogenmod_quincyatt_defconfig
+TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660
+TARGET_KERNEL_CONFIG        := evervolv_quincyatt_defconfig
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
