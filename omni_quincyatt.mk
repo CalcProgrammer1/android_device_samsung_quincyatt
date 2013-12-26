@@ -12,29 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
  
-#
-# This file is the build configuration for a full Android
-# build for maguro hardware. This cleanly combines a set of
-# device-specific aspects (drivers) with a device-agnostic
-# product configuration (apps). Except for a few implementation
-# details, it only fundamentally contains two inherit-product
-# lines, full and maguro, hence its name.
-#
- 
 # Torch
 PRODUCT_PACKAGES := \
     Torch
 
 BOARD_HAVE_NFC := true
 
-# Inherit from those products. Most specific first.
+# Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from quincyatt device
+
+# Inherit from our omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Pull in GSM-specific stuff such as APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 $(call inherit-product, device/samsung/quincyatt/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_quincyatt
+PRODUCT_NAME := omni_quincyatt
 PRODUCT_DEVICE := quincyatt
 PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := SAMSUNG-SGH-I717
