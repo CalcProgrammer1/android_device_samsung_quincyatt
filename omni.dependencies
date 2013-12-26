@@ -1,21 +1,20 @@
 [
   {
-    "remote":         "github",
-    "repository": "cyanogenmod/android_device_samsung_qcom-common",
-    "target_path": "device/samsung/qcom-common"
-    "branch": "cm-11.0"
+    "remote": "github",
+    "repository": "CyanogenMod/android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "revision": "cm-11.0"
   },
   {
-    "remote":         "github",
-    "repository": "cyanogenmod/android_device_samsung_msm8660-common",
-    "target_path": "device/samsung/msm8660-common"
-    "branch": "cm-11.0"
+    "remote": "github",
+    "repository": "CyanogenMod/android_device_samsung_msm8660-common",
+    "target_path": "device/samsung/msm8660-common",
+    "revision": "cm-11.0"
   },
   {
-    "remote":         "github",
+    "remote": "github",
     "repository": "quincy-ubuntu/android_device_samsung_quincy-common",
-    "target_path": "device/samsung/quincy-common"
-    "branch": "android-4.4"
+    "target_path": "device/samsung/quincy-common",
+    "revision": "android-4.4"
   }
 ]
-
